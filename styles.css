@@ -83,7 +83,9 @@
   
   .card {
     background: #fff;
-    width: 200px;
+    max-width: 350px;
+    width: 100%;
+    min-width: 200px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
