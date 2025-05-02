@@ -179,7 +179,7 @@ export default {
       ]
     }
   },
-  metaInfo: {
+  head: {
     title: 'Sentença de Amor - C. S. Evans',
     meta: [
       { name: 'description', content: 'Sentença de Amor - Uma música que fala ao coração. Música de C. S. Evans.' },

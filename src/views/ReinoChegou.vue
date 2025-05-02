@@ -152,7 +152,7 @@ export default {
       ]
     }
   },
-  metaInfo: {
+  head: {
     title: 'O Dia em que o Reino Chegou - C. S. Evans',
     meta: [
       { name: 'description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },

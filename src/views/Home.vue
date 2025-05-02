@@ -27,7 +27,7 @@ export default {
   components: {
     MusicCard
   },
-  metaInfo: {
+  head: {
     title: 'C. S. Evans - Músicas',
     meta: [
       { name: 'description', content: 'Músicas de C. S. Evans' },

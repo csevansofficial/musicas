@@ -175,7 +175,7 @@ export default {
       ]
     }
   },
-  metaInfo: {
+  head: {
     title: 'Me Fez Um Forte - C. S. Evans',
     meta: [
       { name: 'description', content: 'Me Fez Um Forte - Uma música que celebra a força que vem de Deus. Música de C. S. Evans.' },
