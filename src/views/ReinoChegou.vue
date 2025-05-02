@@ -29,6 +29,7 @@
 import MusicDetailCard from '@/components/MusicDetailCard.vue'
 import LyricsBox from '@/components/LyricsBox.vue'
 import LyricsContent from '@/components/LyricsContent.vue'
+import { useHead } from '@vueuse/head'
 
 export default {
   name: 'ReinoChegou',
@@ -36,6 +37,28 @@ export default {
     MusicDetailCard,
     LyricsBox,
     LyricsContent
+  },
+  setup() {
+    useHead({
+      title: 'O Dia em que o Reino Chegou - C. S. Evans',
+      meta: [
+        { name: 'description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
+        { property: 'og:type', content: 'music.song' },
+        { property: 'og:title', content: 'O Dia em que o Reino Chegou - C. S. Evans' },
+        { property: 'og:description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
+        { property: 'og:image', content: 'https://csevans.netlify.app/imagens/o-dia-em-que-o-reino-chegou.jpg' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'O Dia em que o Reino Chegou - Capa do single' },
+        { property: 'og:url', content: 'https://csevans.netlify.app/o-dia-em-que-o-reino-chegou' },
+        { property: 'og:site_name', content: 'C. S. Evans' },
+        { property: 'og:locale', content: 'pt_BR' },
+        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:title', content: 'O Dia em que o Reino Chegou - C. S. Evans' },
+        { property: 'twitter:description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
+        { property: 'twitter:image', content: 'https://csevans.netlify.app/imagens/o-dia-em-que-o-reino-chegou.jpg' }
+      ]
+    })
   },
   data() {
     return {
@@ -151,26 +174,6 @@ export default {
         }
       ]
     }
-  },
-  head: {
-    title: 'O Dia em que o Reino Chegou - C. S. Evans',
-    meta: [
-      { name: 'description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
-      { property: 'og:type', content: 'music.song' },
-      { property: 'og:title', content: 'O Dia em que o Reino Chegou - C. S. Evans' },
-      { property: 'og:description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
-      { property: 'og:image', content: 'https://csevans.netlify.app/imagens/o-dia-em-que-o-reino-chegou.jpg' },
-      { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '630' },
-      { property: 'og:image:alt', content: 'O Dia em que o Reino Chegou - Capa do single' },
-      { property: 'og:url', content: 'https://csevans.netlify.app/o-dia-em-que-o-reino-chegou' },
-      { property: 'og:site_name', content: 'C. S. Evans' },
-      { property: 'og:locale', content: 'pt_BR' },
-      { property: 'twitter:card', content: 'summary_large_image' },
-      { property: 'twitter:title', content: 'O Dia em que o Reino Chegou - C. S. Evans' },
-      { property: 'twitter:description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
-      { property: 'twitter:image', content: 'https://csevans.netlify.app/imagens/o-dia-em-que-o-reino-chegou.jpg' }
-    ]
   }
 }
 </script>

@@ -6,32 +6,35 @@
 
 <script>
 import DefaultLayout from './layouts/DefaultLayout.vue'
+import { useHead } from '@vueuse/head'
 
 export default {
   name: 'App',
   components: {
     DefaultLayout
   },
-  head: {
-    title: 'C. S. Evans - Músicas',
-    meta: [
-      { name: 'description', content: 'Músicas de C. S. Evans' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'C. S. Evans - Músicas' },
-      { property: 'og:description', content: 'Músicas de C. S. Evans' },
-      { property: 'og:url', content: 'https://csevans.netlify.app/' },
-      { property: 'og:image', content: 'https://csevans.netlify.app/imagens/o-caminho.jpg' },
-      { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '630' },
-      { property: 'og:image:alt', content: 'C. S. Evans - Músicas' },
-      { property: 'og:site_name', content: 'C. S. Evans' },
-      { property: 'og:locale', content: 'pt_BR' },
-      { property: 'twitter:card', content: 'summary_large_image' },
-      { property: 'twitter:title', content: 'C. S. Evans - Músicas' },
-      { property: 'twitter:description', content: 'Músicas de C. S. Evans' },
-      { property: 'twitter:url', content: 'https://csevans.netlify.app/' },
-      { property: 'twitter:image', content: 'https://csevans.netlify.app/imagens/o-caminho.jpg' }
-    ]
+  setup() {
+    useHead({
+      title: 'C. S. Evans - Músicas',
+      meta: [
+        { name: 'description', content: 'Músicas de C. S. Evans' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'C. S. Evans - Músicas' },
+        { property: 'og:description', content: 'Músicas de C. S. Evans' },
+        { property: 'og:url', content: 'https://csevans.netlify.app/' },
+        { property: 'og:image', content: 'https://csevans.netlify.app/imagens/o-caminho.jpg' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'C. S. Evans - Músicas' },
+        { property: 'og:site_name', content: 'C. S. Evans' },
+        { property: 'og:locale', content: 'pt_BR' },
+        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:title', content: 'C. S. Evans - Músicas' },
+        { property: 'twitter:description', content: 'Músicas de C. S. Evans' },
+        { property: 'twitter:url', content: 'https://csevans.netlify.app/' },
+        { property: 'twitter:image', content: 'https://csevans.netlify.app/imagens/o-caminho.jpg' }
+      ]
+    })
   }
 }
 </script>

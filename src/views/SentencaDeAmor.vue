@@ -26,6 +26,7 @@
 import MusicDetailCard from '@/components/MusicDetailCard.vue'
 import LyricsBox from '@/components/LyricsBox.vue'
 import LyricsContent from '@/components/LyricsContent.vue'
+import { useHead } from '@vueuse/head'
 
 export default {
   name: 'SentencaDeAmor',
@@ -33,6 +34,28 @@ export default {
     MusicDetailCard,
     LyricsBox,
     LyricsContent
+  },
+  setup() {
+    useHead({
+      title: 'Sentença de Amor - C. S. Evans',
+      meta: [
+        { name: 'description', content: 'Sentença de Amor - Uma música que fala ao coração. Música de C. S. Evans.' },
+        { property: 'og:type', content: 'music.song' },
+        { property: 'og:title', content: 'Sentença de Amor - C. S. Evans' },
+        { property: 'og:description', content: 'Sentença de Amor - Uma música que fala ao coração. Música de C. S. Evans.' },
+        { property: 'og:image', content: 'https://csevans.netlify.app/imagens/sentenca-de-amor.jpg' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'Sentença de Amor - Capa do single' },
+        { property: 'og:url', content: 'https://csevans.netlify.app/sentenca-de-amor' },
+        { property: 'og:site_name', content: 'C. S. Evans' },
+        { property: 'og:locale', content: 'pt_BR' },
+        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:title', content: 'Sentença de Amor - C. S. Evans' },
+        { property: 'twitter:description', content: 'Sentença de Amor - Uma música que fala ao coração. Música de C. S. Evans.' },
+        { property: 'twitter:image', content: 'https://csevans.netlify.app/imagens/sentenca-de-amor.jpg' }
+      ]
+    })
   },
   data() {
     return {
@@ -178,26 +201,6 @@ export default {
         }
       ]
     }
-  },
-  head: {
-    title: 'Sentença de Amor - C. S. Evans',
-    meta: [
-      { name: 'description', content: 'Sentença de Amor - Uma música que fala ao coração. Música de C. S. Evans.' },
-      { property: 'og:type', content: 'music.song' },
-      { property: 'og:title', content: 'Sentença de Amor - C. S. Evans' },
-      { property: 'og:description', content: 'Sentença de Amor - Uma música que fala ao coração. Música de C. S. Evans.' },
-      { property: 'og:image', content: 'https://csevans.netlify.app/imagens/sentenca-de-amor.jpg' },
-      { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '630' },
-      { property: 'og:image:alt', content: 'Sentença de Amor - Capa do single' },
-      { property: 'og:url', content: 'https://csevans.netlify.app/sentenca-de-amor' },
-      { property: 'og:site_name', content: 'C. S. Evans' },
-      { property: 'og:locale', content: 'pt_BR' },
-      { property: 'twitter:card', content: 'summary_large_image' },
-      { property: 'twitter:title', content: 'Sentença de Amor - C. S. Evans' },
-      { property: 'twitter:description', content: 'Sentença de Amor - Uma música que fala ao coração. Música de C. S. Evans.' },
-      { property: 'twitter:image', content: 'https://csevans.netlify.app/imagens/sentenca-de-amor.jpg' }
-    ]
   }
 }
 </script>
