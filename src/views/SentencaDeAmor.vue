@@ -40,46 +40,140 @@ export default {
         {
           type: 'verse',
           lines: [
-            'Quando o mundo me condenou',
-            'E a culpa me perseguiu',
-            'Foi Teu amor que me alcançou',
-            'E a graça me resgatou'
-          ]
-        },
-        {
-          type: 'chorus',
-          lines: [
-            'É sentença de amor',
-            'É sentença de amor',
-            'É sentença de amor',
-            'Que me livrou'
+            'Fui alvo da mão dos homens',
+            'Fui pó lançado ao chão',
+            'Senti a dor do desprezo',
+            'Rotulado sem compaixão'
           ]
         },
         {
           type: 'verse',
           lines: [
-            'Quando a dor me consumiu',
-            'E a tristeza me venceu',
-            'Foi Teu amor que me curou',
-            'E a paz me envolveu'
+            'Por olhos, em si mesmos',
+            'Cheios de razão',
+            'O silêncio era lâmina',
+            'As vozes, navalha',
+            'Que ferem o coração'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Mas o silêncio do Justo',
+            'Me envolveu com Sua verdade'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Disseram que eu não era digno',
+            'Que meu nome era ferida',
+            'Pisaram em minha história',
+            'Como quem apaga a vida'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Mas o Cristo me olhou sem pedra',
+            'Sem desprezo ou condenação',
+            'E Seu olhar foi a ponte',
+            'Do abismo à redenção'
           ]
         },
         {
           type: 'chorus',
           lines: [
-            'É sentença de amor',
-            'É sentença de amor',
-            'É sentença de amor',
-            'Que me livrou'
+            'Quem me julga é Deus',
+            'Não os olhos da multidão',
+            'Sou barro nas mãos do Oleiro',
+            'Já não me molda o desprezo',
+            'Nem me prende o que ficou pra trás',
+            'Pois em Cristo fui formado',
+            'E Ele me chama de filho',
+            'Filho da Sua paz'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'As vozes ainda ecoam',
+            'Mas agora sei quem sou',
+            'Sou a mulher perdoada',
+            'Sou o homem que Ele tocou'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'O vazio perdeu força',
+            'Na luz da Sua compaixão',
+            'Que liberta e dá perdão'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Não sou o erro que cometi',
+            'Nem a acusação que escutei',
+            'Sou imagem restaurada',
+            'Pelo Amor que me perdoou'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Os dedos ainda apontam',
+            'Mas meu espírito já não cai',
+            'Pois o Mestre me ergueu',
+            'E Seu poder me satisfaz'
+          ]
+        },
+        {
+          type: 'chorus',
+          lines: [
+            'Quem me julga é Deus',
+            'E Sua sentença é amor',
+            'Ele escreve no chão da alma',
+            'Palavras que apagam a dor'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Fui ferido, mas sou cura',
+            'Fui perdido, mas encontrei',
+            'A liberdade em Jesus Cristo',
+            'Agora sei que vivo para um Rei'
+          ]
+        },
+        {
+          type: 'chorus',
+          lines: [
+            'Quem me julga é Deus',
+            'E Sua sentença é amor',
+            'Ele escreve no chão da alma',
+            'Palavras que apagam a dor'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Fui ferido, mas sou cura',
+            'Fui perdido, mas encontrei',
+            'A liberdade em Jesus Cristo',
+            'Agora sei que vivo para um Rei'
           ]
         },
         {
           type: 'outro',
           lines: [
-            'É sentença de amor',
-            'É sentença de amor',
-            'É sentença de amor',
-            'Que me livrou'
+            'Ao fim de tudo',
+            'Oro que também quem me feriu',
+            'Se liberte da sua própria dor',
+            'Pois só quem foi perdoado',
+            'Sabe o peso dessa dor',
+            'E conhece o poder do Seu Amor'
           ]
         }
       ]

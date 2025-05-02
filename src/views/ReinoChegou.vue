@@ -40,46 +40,110 @@ export default {
         {
           type: 'verse',
           lines: [
-            'O dia em que o Reino chegou',
-            'A terra se alegrou',
-            'O céu se abriu',
-            'E a glória desceu'
-          ]
-        },
-        {
-          type: 'chorus',
-          lines: [
-            'Aleluia, aleluia',
-            'O Reino chegou',
-            'Aleluia, aleluia',
-            'O Reino está aqui'
+            'O dia desperta sem medo ou pressa',
+            'Os passos seguem sem hesitar',
+            'O vento sopra sem segredos',
+            'E a paz respira em cada olhar'
           ]
         },
         {
           type: 'verse',
           lines: [
-            'O dia em que o Reino chegou',
-            'A morte se rendeu',
-            'A vida venceu',
-            'E a luz brilhou'
+            'O ontem foi como poeira',
+            'Se ergueu girou e partiu',
+            'Hoje a terra é chão seguro',
+            'Pois seguimos Seu caminho e luz'
           ]
         },
         {
           type: 'chorus',
           lines: [
-            'Aleluia, aleluia',
             'O Reino chegou',
-            'Aleluia, aleluia',
-            'O Reino está aqui'
+            'Porque ouvimos porque seguimos',
+            'Como rio que encontra o mar',
+            'Como céu que beija a terra'
           ]
         },
         {
-          type: 'outro',
+          type: 'verse',
           lines: [
-            'O Reino está aqui',
-            'O Reino está aqui',
-            'O Reino está aqui',
-            'O Reino está aqui'
+            'As portas dormem sem cadeados',
+            'As ruas cantam sem temor',
+            'As mães não choram filhos ausentes',
+            'E os filhos correm sem dor'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'As mãos já não se erguem em golpe',
+            'Os lares são âncoras de paz',
+            'O tempo passa sem tormentos',
+            'Pois nos rendemos ao Senhor'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Houve um tempo de pranto e açoites',
+            'De medo trancado em um lar',
+            'De gritos na noite vazia',
+            'De passos que não iam voltar'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Mas a guerra perdeu sua voz',
+            'E a sede encontrou seu fim',
+            'Porque obedecemos à Tua Justiça',
+            'E o Amor fez morada em mim'
+          ]
+        },
+        {
+          type: 'chorus',
+          lines: [
+            'O Reino chegou',
+            'Porque ouvimos porque seguimos',
+            'Como rio que encontra o mar',
+            'Como céu que beija a terra'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Além do véu o sol ainda brilha',
+            'O tempo nos chama a estrada é viva',
+            'Nos braços do vento reencontro a luz',
+            'E sigo a canção que me conduz'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'A noite vem como um abraço',
+            'E a terra adormece em paz',
+            'Os pais descansam sem medo',
+            'Os filhos já sonham com mais'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'As grades viraram memórias tão velhas',
+            'Os muros são só ruínas do que passou',
+            'Pois vivemos segundo Tua Lei',
+            'E o Amor sustenta a todos nós'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'O dia se fecha sem sombras',
+            'Pois tudo é pleno em luz',
+            'A vida repousa serena',
+            'Pois amanhã',
+            'Ela volta a dançar'
           ]
         }
       ]

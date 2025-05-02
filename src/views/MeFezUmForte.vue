@@ -40,46 +40,136 @@ export default {
         {
           type: 'verse',
           lines: [
-            'Quando a força me faltou',
-            'E o cansaço me venceu',
-            'Foi Teu poder que me ergueu',
-            'E a fé me sustentou'
-          ]
-        },
-        {
-          type: 'chorus',
-          lines: [
-            'Me fez um forte',
-            'Me fez um forte',
-            'Me fez um forte',
-            'Em Ti eu sou'
+            'Quem no início me desprezou',
+            'Não sabe que me fez mais forte',
+            'Mas se soubesse disso antes',
+            'Teria me dado outro trato',
+            'Pra que eu tivesse outra sorte'
           ]
         },
         {
           type: 'verse',
           lines: [
-            'Quando a dor me consumiu',
-            'E a tristeza me venceu',
-            'Foi Teu amor que me curou',
-            'E a paz me envolveu'
+            'Quem me olhou de canto',
+            'Hoje me vê de pé',
+            'Pensou que eu ia tombar',
+            'Mas eu fui firme na fé'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Desprezo virou tijolo',
+            'Na parede da minha história',
+            'E cada lágrima que eu chorei',
+            'Hoje é parte da minha glória'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Quem me feriu com palavra',
+            'Me ensinou a resistir',
+            'Quem tentou apagar meu nome',
+            'Fez meu nome ressurgir'
           ]
         },
         {
           type: 'chorus',
           lines: [
-            'Me fez um forte',
-            'Me fez um forte',
-            'Me fez um forte',
-            'Em Ti eu sou'
+            'Se achavam que eu caía',
+            'Não sabiam do meu Norte',
+            'Me jogaram no deserto',
+            'E lá Deus me fez um forte'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Se tivessem me elogiado',
+            'Talvez eu fosse um outro alguém',
+            'Mas na escola da rejeição',
+            'Aprendi o valor de um amém'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Não precisei de aplauso',
+            'Pra saber do meu valor',
+            'Pois o barro rejeitado',
+            'Pra Deus tem grande valor'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Cada não que eu recebi',
+            'Foi empurrão pra eu subir',
+            'Cada dor virou degrau',
+            'Na escada do porvir'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'E quem zombou do meu começo',
+            'Hoje até me faz sorrir',
+            'Porque a força que me move',
+            'Vem do Alto e me faz subir'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Quem me feriu com palavra',
+            'Me ensinou a resistir',
+            'Quem tentou apagar meu nome',
+            'Fez meu nome ressurgir'
+          ]
+        },
+        {
+          type: 'chorus',
+          lines: [
+            'Se achavam que eu caía',
+            'Não sabiam do meu Norte',
+            'Me jogaram no deserto',
+            'E lá Deus me fez um forte'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Quem no início me desprezou',
+            'Não sabe que me fez mais forte',
+            'Mas se soubesse disso antes',
+            'Teria me dado outro trato',
+            'Pra que eu tivesse outra sorte'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Hoje ando com passo firme',
+            'No terreno da esperança',
+            'O desprezo foi adubo',
+            'Pra essa fé que nunca cansa'
+          ]
+        },
+        {
+          type: 'verse',
+          lines: [
+            'Quem tentou me ver caído',
+            'Agora me vê de pé',
+            'Sou herança do impossível',
+            'Estou aqui é para cantar'
           ]
         },
         {
           type: 'outro',
           lines: [
-            'Me fez um forte',
-            'Me fez um forte',
-            'Me fez um forte',
-            'Em Ti eu sou'
+            'Sou herança do impossível',
+            'Estou aqui é para cantar'
           ]
         }
       ]
