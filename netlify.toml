@@ -15,9 +15,6 @@
 [context.branch-deploy]
   command = "npm run build"
 
-[[plugins]]
-  package = "@netlify/plugin-vue"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -26,10 +23,10 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
   for = "/imagens/*"
