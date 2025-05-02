@@ -44,20 +44,54 @@ export default {
 </script>
 
 <style scoped>
-.lyrics-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.lyrics-section {
+  margin-bottom: var(--space-8);
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.lyrics-content p {
-  margin: 0;
-  color: #444;
-  line-height: 1.6;
+.lyrics-section:last-child {
+  margin-bottom: 0;
 }
 
-.lyrics-content p.chorus {
-  font-weight: 500;
-  color: #2c3e50;
+.lyrics-section h4 {
+  margin: 0 0 var(--space-4) 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-800);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.lyrics-verse {
+  margin-bottom: var(--space-4);
+  color: var(--color-gray-700);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+}
+
+.lyrics-verse:last-child {
+  margin-bottom: 0;
+}
+
+.lyrics-chorus {
+  margin: var(--space-6) 0;
+  padding: var(--space-4);
+  background: var(--color-gray-100);
+  border-radius: var(--border-radius-lg);
+  color: var(--color-gray-800);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-medium);
+}
+
+@media (max-width: 768px) {
+  .lyrics-section {
+    margin-bottom: var(--space-6);
+  }
+
+  .lyrics-chorus {
+    margin: var(--space-4) 0;
+    padding: var(--space-3);
+  }
 }
 </style> 

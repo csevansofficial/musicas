@@ -1,6 +1,6 @@
-# E. C. S. Music
+# C. S. Evans
 
-Site oficial de E. C. S. Music, apresentando singles e músicas.
+Site oficial de C. S. Evans, apresentando singles e músicas.
 
 ## Instalação
 

@@ -12,6 +12,7 @@
           :title="single.title"
           :description="single.description"
           :image="single.image"
+          :link="single.route"
         />
       </router-link>
     </div>
@@ -19,7 +20,7 @@
 </template>
 
 <script>
-import MusicCard from '../components/MusicCard.vue'
+import MusicCard from '@/components/MusicCard.vue'
 
 export default {
   name: 'Home',
@@ -71,8 +72,8 @@ export default {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 3rem;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -86,7 +87,7 @@ export default {
 
 @media (min-width: 768px) {
   .card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 </style> 
