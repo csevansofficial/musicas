@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import MusicCard from '@/components/MusicCard.vue'
-import { useHead } from '@vueuse/head'
+import { ref } from 'vue'
+import MusicCard from '../components/MusicCard.vue'
 
 export default {
   name: 'Home',
@@ -29,53 +29,32 @@ export default {
     MusicCard
   },
   setup() {
-    useHead({
-      title: 'C. S. Evans - Músicas',
-      meta: [
-        { name: 'description', content: 'Músicas de C. S. Evans' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'C. S. Evans - Músicas' },
-        { property: 'og:description', content: 'Músicas de C. S. Evans' },
-        { property: 'og:url', content: 'https://csevans.netlify.app/' },
-        { property: 'og:image', content: 'https://csevans.netlify.app/imagens/o-caminho.jpg' },
-        { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'C. S. Evans - Músicas' },
-        { property: 'og:site_name', content: 'C. S. Evans' },
-        { property: 'og:locale', content: 'pt_BR' },
-        { property: 'twitter:card', content: 'summary_large_image' },
-        { property: 'twitter:title', content: 'C. S. Evans - Músicas' },
-        { property: 'twitter:description', content: 'Músicas de C. S. Evans' },
-        { property: 'twitter:url', content: 'https://csevans.netlify.app/' },
-        { property: 'twitter:image', content: 'https://csevans.netlify.app/imagens/o-caminho.jpg' }
-      ]
-    })
-  },
-  data() {
+    const singles = ref([
+      {
+        id: 1,
+        title: 'Me Fez Um Forte',
+        artist: 'C. S. Evans',
+        cover: '/imagens/me-fez-um-forte.jpg',
+        link: '/me-fez-um-forte'
+      },
+      {
+        id: 2,
+        title: 'Sentença de Amor',
+        artist: 'C. S. Evans',
+        cover: '/imagens/sentenca-de-amor.jpg',
+        link: '/sentenca-de-amor'
+      },
+      {
+        id: 3,
+        title: 'O Dia em que o Reino Chegou',
+        artist: 'C. S. Evans',
+        cover: '/imagens/o-dia-em-que-o-reino-chegou.jpg',
+        link: '/o-dia-em-que-o-reino-chegou'
+      }
+    ])
+
     return {
-      singles: [
-        {
-          id: 1,
-          title: 'Me Fez Um Forte',
-          description: 'Uma jornada de superação pela fé.',
-          image: '/imagens/me-fez-um-forte.jpg',
-          route: '/me-fez-um-forte'
-        },
-        {
-          id: 5,
-          title: 'Sentença de Amor',
-          description: 'Uma música que fala ao coração.',
-          image: '/imagens/sentenca-de-amor.jpg',
-          route: '/sentenca-de-amor'
-        },
-        {
-          id: 6,
-          title: 'O Dia em que o Reino Chegou',
-          description: 'Uma celebração do Reino de Deus.',
-          image: '/imagens/o-dia-em-que-o-reino-chegou.jpg',
-          route: '/o-dia-em-que-o-reino-chegou'
-        }
-      ]
+      singles
     }
   }
 }

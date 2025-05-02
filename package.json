@@ -1,6 +1,6 @@
 {
-  "name": "e-c-s-music",
-  "version": "1.0.0",
+  "name": "musicas-new",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -8,12 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vueuse/head": "^2.0.0",
     "vue": "^3.3.4",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue": "^4.3.4",
     "vite": "^4.4.9"
   }
 }
