@@ -2,7 +2,7 @@
   <div class="container">
     <MusicDetailCard
       title="O Dia em que o Reino Chegou"
-      image="/imagens/reino-chegou.jpg"
+      image="/imagens/o-dia-em-que-o-reino-chegou.jpg"
       spotifyUrl="#"
       deezerUrl="#"
       appleMusicUrl="#"
@@ -12,7 +12,10 @@
       youtubeUrl="#"
     >
       <template #description>
-        <p>Uma música profética que celebra a chegada do Reino de Deus. Com letras que expressam a esperança e a alegria da presença divina, esta canção nos convida a viver a realidade do Reino aqui e agora.</p>
+        <p>"O Dia em que o Reino Chegou" é uma canção profética e contemplativa, em que o eu lírico canta a partir do futuro, celebrando o cumprimento da promessa de Jesus: "Bem-aventurados os mansos, porque herdarão a terra" (Mateus 5:5).</p>
+        <p>Do futuro, ele olha para o passado — que, na verdade, ainda é o nosso presente.</p>
+        <p>A música desperta uma saudade diferente: não de algo que vivemos, mas de um tempo que ainda não chegou. Uma saudade que nasce da distância entre o que experimentamos hoje e aquilo que já pudemos vislumbrar com a imaginação.</p>
+        <p>Com melodia suave e atmosfera espiritual, essa canção convida à reflexão, à esperança e ao desejo sincero de um mundo reconciliado com o amor e a paz de Deus.</p>
       </template>
     </MusicDetailCard>
 
@@ -156,17 +159,17 @@ export default {
       { property: 'og:type', content: 'music.song' },
       { property: 'og:title', content: 'O Dia em que o Reino Chegou - C. S. Evans' },
       { property: 'og:description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
-      { property: 'og:image', content: 'https://csevans.com/imagens/o-dia-em-que-o-reino-chegou.jpg' },
+      { property: 'og:image', content: 'https://csevans.art/imagens/o-dia-em-que-o-reino-chegou.jpg' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
       { property: 'og:image:alt', content: 'O Dia em que o Reino Chegou - Capa do single' },
-      { property: 'og:url', content: 'https://csevans.com/o-dia-em-que-o-reino-chegou' },
+      { property: 'og:url', content: 'https://csevans.art/o-dia-em-que-o-reino-chegou' },
       { property: 'og:site_name', content: 'C. S. Evans' },
       { property: 'og:locale', content: 'pt_BR' },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:title', content: 'O Dia em que o Reino Chegou - C. S. Evans' },
       { property: 'twitter:description', content: 'O Dia em que o Reino Chegou - Uma celebração do Reino de Deus. Música de C. S. Evans.' },
-      { property: 'twitter:image', content: 'https://csevans.com/imagens/o-dia-em-que-o-reino-chegou.jpg' }
+      { property: 'twitter:image', content: 'https://csevans.art/imagens/o-dia-em-que-o-reino-chegou.jpg' }
     ]
   }
 }

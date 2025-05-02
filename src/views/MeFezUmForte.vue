@@ -182,17 +182,17 @@ export default {
       { property: 'og:type', content: 'music.song' },
       { property: 'og:title', content: 'Me Fez Um Forte - C. S. Evans' },
       { property: 'og:description', content: 'Me Fez Um Forte - Uma música que celebra a força que vem de Deus. Música de C. S. Evans.' },
-      { property: 'og:image', content: 'https://csevans.com/imagens/me-fez-um-forte.jpg' },
+      { property: 'og:image', content: 'https://csevans.art/imagens/me-fez-um-forte.jpg' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
       { property: 'og:image:alt', content: 'Me Fez Um Forte - Capa do single' },
-      { property: 'og:url', content: 'https://csevans.com/me-fez-um-forte' },
+      { property: 'og:url', content: 'https://csevans.art/me-fez-um-forte' },
       { property: 'og:site_name', content: 'C. S. Evans' },
       { property: 'og:locale', content: 'pt_BR' },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:title', content: 'Me Fez Um Forte - C. S. Evans' },
       { property: 'twitter:description', content: 'Me Fez Um Forte - Uma música que celebra a força que vem de Deus. Música de C. S. Evans.' },
-      { property: 'twitter:image', content: 'https://csevans.com/imagens/me-fez-um-forte.jpg' }
+      { property: 'twitter:image', content: 'https://csevans.art/imagens/me-fez-um-forte.jpg' }
     ]
   }
 }
