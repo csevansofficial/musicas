@@ -1,48 +1,75 @@
-# C. S. Evans
+# Nuxt Minimal Starter
 
-Site oficial de C. S. Evans, apresentando singles e músicas.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Instalação
+## Setup
 
-1. Clone o repositório
-2. Instale as dependências:
+Make sure to install dependencies:
+
 ```bash
+# npm
 npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-## Desenvolvimento
+## Development Server
 
-Para iniciar o servidor de desenvolvimento:
+Start the development server on `http://localhost:3000`:
+
 ```bash
+# npm
 npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
-## Build
+## Production
 
-Para criar a build de produção:
+Build the application for production:
+
 ```bash
+# npm
 npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
-## Deploy no Netlify
+Locally preview production build:
 
-1. Faça login na sua conta do Netlify
-2. Conecte o repositório do GitHub
-3. Configure as seguintes configurações de build:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-4. Clique em "Deploy site"
+```bash
+# npm
+npm run preview
 
-## Estrutura do Projeto
+# pnpm
+pnpm preview
 
+# yarn
+yarn preview
+
+# bun
+bun run preview
 ```
-├── public/              # Arquivos estáticos
-│   ├── imagens/        # Imagens dos singles
-│   └── styles.css      # Estilos globais
-├── src/                # Código fonte
-│   ├── App.vue         # Componente principal
-│   └── main.js         # Ponto de entrada
-├── index.html          # Template HTML
-├── vite.config.js      # Configuração do Vite
-└── package.json        # Dependências e scripts
-```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
