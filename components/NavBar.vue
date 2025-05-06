@@ -18,10 +18,10 @@
             Início
           </NuxtLink>
           <NuxtLink
-            to="/musicas"
+            to="/devocionais"
             class="text-gray-700 hover:text-blue-600 transition-colors"
           >
-            Músicas
+            Devocionais
           </NuxtLink>
           <NuxtLink
             to="/sobre"
