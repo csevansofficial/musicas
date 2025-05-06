@@ -5,7 +5,7 @@
         <!-- Logo -->
         <div>
           <NuxtLink to="/" class="flex items-center">
-            <span class="font-semibold text-gray-700 text-lg">C. S. Evans</span>
+            <span class="font-semibold text-gray-700 text-lg"><Logo/></span>
           </NuxtLink>
         </div>
 
