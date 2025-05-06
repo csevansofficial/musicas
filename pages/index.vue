@@ -3,7 +3,7 @@
     <NavBar />
     <main class="container mx-auto px-4 py-8 flex-grow">
       <h1 class="text-3xl font-bold text-center mb-8">Músicas</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center content-start">
         <MusicCard
           v-for="single in singles"
           :key="single.id"

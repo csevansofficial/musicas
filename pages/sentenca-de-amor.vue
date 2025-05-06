@@ -4,19 +4,22 @@
       title="Sentença de Amor"
       description="Uma música que fala ao coração. Uma canção sobre o amor incondicional de Deus e como Ele nos transforma através do Seu amor."
       image="/imagens/sentenca-de-amor.jpg"
-      spotify-url="https://open.spotify.com/track/..."
-      youtube-url="https://youtube.com/watch?v=..."
-      youtube-music-url="https://music.youtube.com/watch?v=..."
-      deezer-url="https://deezer.com/track/..."
-      apple-music-url="https://music.apple.com/..."
-      itunes-url="https://itunes.apple.com/..."
-      amazon-music-url="https://music.amazon.com/..."
-      tidal-url="https://tidal.com/track/..."
+      :platforms="platforms"
     />
   </div>
 </template>
 
 <script setup>
+const platforms = {
+  spotify: 'https://open.spotify.com/track/...',
+  youtube: 'https://youtube.com/watch?v=...',
+  deezer: 'https://deezer.com/track/...',
+  appleMusic: 'https://music.apple.com/...',
+  itunes: 'https://itunes.apple.com/...',
+  amazonMusic: 'https://music.amazon.com/...',
+  tidal: 'https://tidal.com/track/...'
+}
+
 useHead({
   title: 'Sentença de Amor | C. S. Evans',
   meta: [
@@ -27,4 +30,4 @@ useHead({
     { property: 'og:type', content: 'music.song' }
   ]
 })
-</script> 
+</script>
