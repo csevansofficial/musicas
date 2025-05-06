@@ -36,7 +36,7 @@ const music = {
 
 // Meta tags para SEO
 useHead({
-  title: `${music.title} | Seu Site`,
+  title: `${music.title} | C. S. EVANS`,
   meta: [
     { name: 'description', content: music.description },
     { property: 'og:title', content: music.title },
