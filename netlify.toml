@@ -1,9 +1,9 @@
 [build]
-  command = "npm install && npm run build"
+  command = "export PATH=\"/opt/buildhome/.nvm/versions/node/v18.18.2/bin:$PATH\" && npm install && npm run build"
   publish = ".output/public"
 
 [build.environment]
-  NODE_VERSION = "18.0.0"
+  NODE_VERSION = "18.18.2"
   NPM_VERSION = "9.0.0"
 
 [context.production]
@@ -31,4 +31,4 @@
 [[headers]]
   for = "/imagens/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable
+    Cache-Control = "public, max-age=31536000, immutable"
