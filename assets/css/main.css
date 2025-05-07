@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-100;
-} 
+@layer base {
+  :root {
+    --glass-bg-color: rgba(255, 255, 255, 0.1);
+    --glass-border-color: rgba(255, 255, 255, 0.2);
+    --glass-blur: blur(10px);
+    --glass-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+
+  body {
+    @apply bg-gray-100 font-sans;
+  }
+}
+
+.glass {
+  background: var(--glass-bg-color);
+  border: 1px solid var(--glass-border-color);
+  border-radius: 10px;
+  box-shadow: var(--glass-box-shadow);
+  backdrop-filter: var(--glass-blur);
+}

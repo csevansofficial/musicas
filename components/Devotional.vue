@@ -1,5 +1,5 @@
 <template>
-  <div class="devotional">
+  <div class="devotional glass">
     <h2 class="devotional-title">{{ title }}</h2>
     <div class="devotional-content">
       <div v-if="youtubeId" class="youtube-video">
