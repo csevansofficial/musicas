@@ -8,8 +8,8 @@
     --color-primary: #2563eb; /* Azul */
     --color-secondary: #9333ea; /* Roxo */
     --color-accent: #f59e0b; /* Amarelo */
-    --color-background-light: #f9d423; /* Dourado claro */
-    --color-background-dark: #c79810; /* Dourado escuro */
+    --color-background-light: #ffc107; /* Dourado claro */
+    --color-background-dark: #d4a373; /* Dourado escuro */
     --color-text: #1f2937; /* Cinza escuro */
     --color-border: #e5e7eb; /* Cinza borda */
 
@@ -51,25 +51,85 @@
 
   /* Estilo global do corpo */
   body {
-    background-color: var(--color-background);
-    color: var(--color-text);
+    background-image:
+      radial-gradient(
+        circle at 30% 30%,
+        #ffd072 0%,
+        var(--color-accent) 30%,
+        var(--color-background-light) 60%,
+        var(--color-background-dark) 100%
+      ),
+      url('/images/noise.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
     font-family: var(--font-sans);
+    color: var(--color-text);
+    min-height: 100vh;
+  }
+  
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust transparency as needed */
+    z-index: -1; /* Place behind the content */
+  }
+
+  h2 {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Adjust color and blur as needed */
   }
 }
 
 /* Estilo para o efeito de vidro fosco */
 .glass {
   background: var(--glass-bg-color);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--border-radius-md);
+  border: 1px solid var(--glass-border-color);
+  border-radius: 1rem; /* Adjust as needed */
   box-shadow: var(--glass-box-shadow);
   backdrop-filter: var(--glass-blur);
+  transition: all 0.3s ease-in-out; /* Add a smooth transition */
+  color: #333; /* Adjust as needed */
+  animation: glass-glow 5s infinite alternate; /* Adjust duration and iteration count as needed */
 }
-
 
 /* Botão padrão */
 .button {
   @apply px-4 py-2 rounded font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all;
+}
+
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.2); /* Reduced transparency */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly stronger border */
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--glass-box-shadow);
+  backdrop-filter: blur(15px); /* Increased blur */
+}
+
+@keyframes glass-glow {
+  0% {
+    box-shadow: var(--glass-box-shadow);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: var(--glass-box-shadow);
+  }
+}
+
+@keyframes background-pan {
+  0% {
+    background-position: 0% 0%, 50% 50%, center;
+  }
+  100% {
+    background-position: 150% 150%, 50% 50%, center;
+  }
 }
 
 @layer utilities {

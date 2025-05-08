@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col relative bg-gradient-to-b from-[var(--color-background-light)] to-[var(--color-background-dark)]">
+  <div class="min-h-screen flex flex-col relative">
     <NavBar />
 
     <main class="flex-1 px-4 py-8 flex justify-center items-center">
