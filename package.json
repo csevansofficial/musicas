@@ -21,6 +21,9 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "nuxt": "^3.8.0"
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "nuxt": "^3.8.0",
+    "tailwindcss-filters": "^3.0.0"
   }
 }

@@ -1,15 +1,15 @@
 <template>
-  <div class="min-h-screen flex flex-col glass">
+  <div class="min-h-screen flex flex-col relative bg-gradient-to-b from-[var(--color-background-light)] to-[var(--color-background-dark)]">
     <NavBar />
-    <NuxtPage />
+
+    <main class="flex-1 px-4 py-8 flex justify-center items-center">
+      <div class="w-full p-6 max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+        <NuxtPage />
+      </div>
+    </main>
+
     <Footer />
     <ScrollToTopButton />
-    <button
-      v-if="isVisible"
-      @click="scrollToTop"
-      class="fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all border border-red-500"
-      aria-label="Voltar ao topo"
-    ></button>
   </div>
 </template>
 
@@ -18,3 +18,9 @@ import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
 import ScrollToTopButton from "@/components/ScrollToTopButton.vue";
 </script>
+
+<style>
+body {
+  font-family: var(--font-sans);
+}
+</style>

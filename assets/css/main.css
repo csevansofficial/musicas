@@ -4,21 +4,76 @@
 
 @layer base {
   :root {
-    --glass-bg-color: rgba(255, 255, 255, 0.1);
+    /* Cores principais */
+    --color-primary: #2563eb; /* Azul */
+    --color-secondary: #9333ea; /* Roxo */
+    --color-accent: #f59e0b; /* Amarelo */
+    --color-background-light: #f9d423; /* Dourado claro */
+    --color-background-dark: #c79810; /* Dourado escuro */
+    --color-text: #1f2937; /* Cinza escuro */
+    --color-border: #e5e7eb; /* Cinza borda */
+
+    /* Espaçamentos */
+    --spacing-sm: 0.5rem; /* 8px */
+    --spacing-md: 1rem; /* 16px */
+    --spacing-lg: 2rem; /* 32px */
+    --spacing-xl: 4rem; /* 64px */
+
+    /* Tipografia */
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Merriweather', serif;
+    --font-mono: 'Fira Code', monospace;
+
+    /* Tamanhos de fonte */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-lg: 1.125rem; /* 18px */
+    --text-xl: 1.25rem; /* 20px */
+    --text-2xl: 1.5rem; /* 24px */
+    --text-3xl: 1.875rem; /* 30px */
+
+    /* Bordas */
+    --border-radius-sm: 0.25rem; /* 4px */
+    --border-radius-md: 0.5rem; /* 8px */
+    --border-radius-lg: 1rem; /* 16px */
+
+    /* Sombreamento */
+    --box-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --box-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+    /* Vidro fosco */
+    --glass-bg-color: rgba(255, 255, 255, 0.678);
     --glass-border-color: rgba(255, 255, 255, 0.2);
     --glass-blur: blur(10px);
     --glass-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
 
+  /* Estilo global do corpo */
   body {
-    @apply bg-gray-100 font-sans;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-sans);
   }
 }
 
+/* Estilo para o efeito de vidro fosco */
 .glass {
   background: var(--glass-bg-color);
-  border: 1px solid var(--glass-border-color);
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-md);
   box-shadow: var(--glass-box-shadow);
   backdrop-filter: var(--glass-blur);
+}
+
+
+/* Botão padrão */
+.button {
+  @apply px-4 py-2 rounded font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white bg-opacity-30 border border-white border-opacity-20 rounded-md shadow-glass backdrop-blur-glass;
+  }
 }
