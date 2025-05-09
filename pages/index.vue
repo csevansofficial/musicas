@@ -24,7 +24,6 @@
           :description="single.description"
           :image="single.image"
           :route="single.route"
-          :spotifyLink="single.spotifyLink"
           class="w-[320px]"
         />
       </div>
@@ -33,25 +32,27 @@
 </template>
 
 <script setup>
+import MusicCard from "@/components/MusicCard.vue"; // Certifique-se de que o caminho está correto
+
 const singles = [
   {
     id: 1,
     title: 'Me Fez Um Forte',
-    description: 'Uma música que celebra a força que vem de Deus',
+    description: 'Uma música que celebra a força que vem de Deus. Uma canção que fala sobre a transformação que acontece quando entregamos nossa vida ao Senhor.',
     image: '/imagens/me-fez-um-forte.jpg',
     route: '/me-fez-um-forte',
   },
   {
     id: 2,
     title: 'Sentença de Amor',
-    description: 'Uma música que fala ao coração',
+    description: 'Uma canção que revela o juízo misericordioso de Cristo, onde a sentença é o perdão que transforma.',
     image: '/imagens/sentenca-de-amor.jpg',
     route: '/sentenca-de-amor',
   },
   {
     id: 3,
     title: 'O Dia em que o Reino Chegou',
-    description: 'Uma celebração do Reino de Deus',
+    description: 'Uma música profética que canta o futuro prometido por Jesus — quando os mansos herdarão a Terra.',
     image: '/imagens/o-dia-em-que-o-reino-chegou.jpg',
     route: '/o-dia-em-que-o-reino-chegou',
   }

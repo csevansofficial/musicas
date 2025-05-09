@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,6 +25,8 @@
     --font-sans: 'Inter', sans-serif;
     --font-serif: 'Merriweather', serif;
     --font-mono: 'Fira Code', monospace;
+    --font-header: 'Playfair Display', serif;
+    --font-body: 'Lora', serif;
 
     /* Tamanhos de fonte */
     --text-sm: 0.875rem; /* 14px */
@@ -64,7 +68,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: overlay;
-    font-family: var(--font-sans);
+    font-family: var(--font-body); /* Fonte padrão para o corpo */
     color: var(--color-text);
     min-height: 100vh;
   }
@@ -81,8 +85,16 @@
     z-index: -1; /* Place behind the content */
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header); /* Fonte para os headers */
+  }
+
   h2 {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Adjust color and blur as needed */
+  }
+
+  p {
+    font-family: var(--font-body); /* Garante que os parágrafos usem Lora */
   }
 }
 

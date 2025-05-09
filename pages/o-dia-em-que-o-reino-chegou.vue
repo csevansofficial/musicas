@@ -2,9 +2,9 @@
 
   <div class="container mx-auto px-4 py-8">
     <MusicDetailCard
-      title="O Dia em que o Reino Chegou"
-      description="Uma celebração do Reino de Deus. Uma canção que fala sobre a presença de Deus em nossas vidas e como o Seu Reino se manifesta através de nós."
-      image="/imagens/o-dia-em-que-o-reino-chegou.jpg"
+      :title="title"
+      :description="description"
+      :image="imagem"
       :spotifyPlayer="platforms.spotifyPlayer"
       :platforms="platforms"
     />
@@ -24,13 +24,17 @@ const platforms = {
   // tidal: 'https://tidal.com/track/...'
 }
 
+const title = 'Sentença de Amor'
+const description = 'Uma música profética que canta o futuro prometido por Jesus — quando os mansos herdarão a Terra.'
+const imagem = '/imagens/o-dia-em-que-o-reino-chegou.jpg'
+
 useHead({
-  title: 'O Dia em que o Reino Chegou | C. S. Evans',
+  title: `${title} - C. S. Evans`,
   meta: [
-    { name: 'description', content: 'Uma celebração do Reino de Deus' },
-    { property: 'og:title', content: 'O Dia em que o Reino Chegou - C. S. Evans' },
-    { property: 'og:description', content: 'Uma celebração do Reino de Deus' },
-    { property: 'og:image', content: '/imagens/o-dia-em-que-o-reino-chegou.jpg' },
+    { name: 'description', content: description },
+    { property: 'og:title', content: `${title} - C. S. Evans` },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: imagem },
     { property: 'og:type', content: 'music.song' }
   ]
 })

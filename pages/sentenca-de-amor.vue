@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto px-4 py-8">
     <MusicDetailCard
-      title="Sentença de Amor"
-      description="Uma música que fala ao coração. Uma canção sobre o amor incondicional de Deus e como Ele nos transforma através do Seu amor."
-      image="/imagens/sentenca-de-amor.jpg"
+      :title="title"
+      :description="description"
+      :image="imagem"
       :spotifyPlayer="platforms.spotifyPlayer"
       :platforms="platforms"
     />
@@ -11,6 +11,7 @@
 </template>
 
 <script setup>
+
 const platforms = {
   spotifyPlayer: 'https://open.spotify.com/embed/album/6Uax1kIvDvUqL4w35eBQgU?utm_source=generator',
   spotify: 'https://open.spotify.com/intl-pt/album/6Uax1kIvDvUqL4w35eBQgU?si=gl7g4XfjTrOb7ikdXCjsNg',
@@ -23,13 +24,17 @@ const platforms = {
   // tidal: 'https://tidal.com/track/...'
 }
 
+const title = 'Sentença de Amor'
+const description = 'Uma canção que revela o juízo misericordioso de Cristo, onde a sentença é o perdão que transforma.'
+const imagem = '/imagens/sentenca-de-amor.jpg'
+
 useHead({
-  title: 'Sentença de Amor | C. S. Evans',
+  title: `${title} - C. S. Evans`,
   meta: [
-    { name: 'description', content: 'Uma música que fala ao coração' },
-    { property: 'og:title', content: 'Sentença de Amor - C. S. Evans' },
-    { property: 'og:description', content: 'Uma música que fala ao coração' },
-    { property: 'og:image', content: '/imagens/sentenca-de-amor.jpg' },
+    { name: 'description', content: description },
+    { property: 'og:title', content: `${title} - C. S. Evans` },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: imagem },
     { property: 'og:type', content: 'music.song' }
   ]
 })

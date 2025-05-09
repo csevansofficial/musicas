@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto">
     <MusicDetailCard
-      title="Me Fez Um Forte"
-      description="Uma música que celebra a força que vem de Deus. Uma canção que fala sobre a transformação que acontece quando entregamos nossa vida ao Senhor."
-      image="/imagens/me-fez-um-forte.jpg"
+      :title="title"
+      :description="description"
+      :image="imagem"
       :spotifyPlayer="platforms.spotifyPlayer"
       :platforms="platforms"
     />
@@ -23,13 +23,17 @@ const platforms = {
   // tidal: 'https://tidal.com/track/...'
 }
 
+const title = 'Me Fez Um Forte'
+const description = 'Uma música que celebra a força que vem de Deus. Uma canção que fala sobre a transformação que acontece quando entregamos nossa vida ao Senhor.'
+const imagem = '/imagens/me-fez-um-forte.jpg'
+
 useHead({
-  title: 'Me Fez Um Forte | C. S. Evans',
+  title: `${title} - C. S. Evans`,
   meta: [
-    { name: 'description', content: 'Uma música que celebra a força que vem de Deus' },
-    { property: 'og:title', content: 'Me Fez Um Forte - C. S. Evans' },
-    { property: 'og:description', content: 'Uma música que celebra a força que vem de Deus' },
-    { property: 'og:image', content: '/imagens/me-fez-um-forte.jpg' },
+    { name: 'description', content: description },
+    { property: 'og:title', content: `${title} - C. S. Evans` },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: imagem },
     { property: 'og:type', content: 'music.song' }
   ]
 })
