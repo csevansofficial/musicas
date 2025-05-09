@@ -10,6 +10,7 @@
           :description="single.description"
           :image="single.image"
           :route="single.route"
+          :spotifyLink="single.spotifyLink"
         />
       </div>
     </main>
@@ -24,12 +25,7 @@ const singles = [
     description: 'Uma música que celebra a força que vem de Deus',
     image: '/imagens/me-fez-um-forte.jpg',
     route: '/me-fez-um-forte',
-    platforms: [
-      { name: 'YouTube', icon: '/imagens/icons/youtube.png', link: 'https://youtube.com' },
-      { name: 'YouTube Music', icon: '/imagens/icons/youtube-music.png', link: 'https://music.youtube.com' },
-      { name: 'Spotify', icon: '/imagens/icons/spotify-correct.png', link: 'https://spotify.com' },
-      { name: 'Apple Music', icon: '/imagens/icons/apple-music-correct.png', link: 'https://music.apple.com' }
-    ]
+    spotifyLink: 'https://open.spotify.com/embed/track/3TrhijH0n2Rd69IQ9rkCSG?utm_source=generator'
   },
   {
     id: 2,
@@ -37,12 +33,7 @@ const singles = [
     description: 'Uma música que fala ao coração',
     image: '/imagens/sentenca-de-amor.jpg',
     route: '/sentenca-de-amor',
-    platforms: [
-      { name: 'YouTube', icon: '/imagens/icons/youtube.png', link: 'https://youtube.com' },
-      { name: 'YouTube Music', icon: '/imagens/icons/youtube-music.png', link: 'https://music.youtube.com' },
-      { name: 'Spotify', icon: '/imagens/icons/spotify-correct.png', link: 'https://spotify.com' },
-      { name: 'Apple Music', icon: '/imagens/icons/apple-music-correct.png', link: 'https://music.apple.com' }
-    ]
+    spotifyLink: 'https://open.spotify.com/embed/track/2FEOgR19YJ6PfDIY4Z0Z7b?utm_source=generator'
   },
   {
     id: 3,
@@ -50,12 +41,7 @@ const singles = [
     description: 'Uma celebração do Reino de Deus',
     image: '/imagens/o-dia-em-que-o-reino-chegou.jpg',
     route: '/o-dia-em-que-o-reino-chegou',
-    platforms: [
-      { name: 'YouTube', icon: '/imagens/icons/youtube.png', link: 'https://youtube.com' },
-      { name: 'YouTube Music', icon: '/imagens/icons/youtube-music.png', link: 'https://music.youtube.com' },
-      { name: 'Spotify', icon: '/imagens/icons/spotify-correct.png', link: 'https://spotify.com' },
-      { name: 'Apple Music', icon: '/imagens/icons/apple-music-correct.png', link: 'https://music.apple.com' }
-    ]
+    spotifyLink: 'https://open.spotify.com/embed/track/5FBKxNqLiCaYLn4Ful6ING?utm_source=generator'
   }
-]
+];
 </script>

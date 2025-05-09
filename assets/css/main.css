@@ -5,8 +5,8 @@
 @layer base {
   :root {
     /* Cores principais */
-    --color-primary: #2563eb; /* Azul */
-    --color-secondary: #9333ea; /* Roxo */
+    --color-primary: #eb9525; 
+    --color-secondary: #33ea42; 
     --color-accent: #f59e0b; /* Amarelo */
     --color-background-light: #ffc107; /* Dourado claro */
     --color-background-dark: #d4a373; /* Dourado escuro */
@@ -100,7 +100,12 @@
 
 /* Botão padrão */
 .button {
-  @apply px-4 py-2 rounded font-medium text-white bg-blue-600 hover:bg-blue-700 transition-all;
+  @apply px-4 py-2 rounded font-medium text-white transition-all;
+  background-color: var(--color-primary);
+}
+
+.button:hover {
+  background-color: darken(var(--color-primary), 10%);
 }
 
 .frosted-glass {

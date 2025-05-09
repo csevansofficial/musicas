@@ -2,8 +2,8 @@
   <div class="min-h-screen flex flex-col relative">
     <NavBar />
 
-    <main class="flex-1 px-4 py-8 flex justify-center items-center">
-      <div class="w-full p-6 max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+    <main class="flex-1 py-8 flex justify-center items-center">
+      <div class="w-full max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
         <NuxtPage />
       </div>
     </main>

@@ -1,15 +1,13 @@
 <template>
+  <h2 hidden class="text-xl font-bold text-gray-800 mb-4">{{ title }}</h2>
   <div class="bg-white shadow-lg rounded-lg overflow-hidden max-w-[320px] mx-auto glass">
-    <img :src="image" alt="Capa da música" class="w-full aspect-square object-cover">
-
+    
+    <div v-if="spotifyPlayer">
+      <iframe :src="spotifyPlayer" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <img v-else :src="image" alt="Capa da música" class="w-full aspect-square object-cover">
     <div class="p-6 text-center">
-      <h2 class="text-xl font-bold text-gray-800 mb-4">{{ title }}</h2>
-
-      <button class="bg-blue-600 text-white text-base font-medium px-4 py-2 rounded mb-6 hover:bg-blue-700 transition-colors">
-        Ouça um Trecho
-      </button>
-
-      <div class="flex flex-wrap justify-center gap-2 mb-6">
+          <div class="flex flex-wrap justify-center gap-2 mb-6">
         <a v-if="platforms.spotify"
            :href="platforms.spotify"
            target="_blank"
@@ -71,6 +69,10 @@ export default {
     title: String,
     description: String,
     image: String,
+    spotifyPlayer: {
+      type: String,
+      default: ''
+    },
     platforms: {
       type: Object,
       default: () => ({
