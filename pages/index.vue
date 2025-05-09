@@ -25,7 +25,7 @@
           :image="single.image"
           :route="single.route"
           :spotifyLink="single.spotifyLink"
-          class="w-full sm:w-auto"
+          class="w-[320px]"
         />
       </div>
     </main>
