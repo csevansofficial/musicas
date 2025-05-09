@@ -22,19 +22,19 @@
     --spacing-xl: 4rem; /* 64px */
 
     /* Tipografia */
-    --font-sans: 'Inter', sans-serif;
-    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Lora', sans-serif;
+    --font-serif: 'Lora', serif;
     --font-mono: 'Fira Code', monospace;
     --font-header: 'Playfair Display', serif;
     --font-body: 'Lora', serif;
 
-    /* Tamanhos de fonte */
-    --text-sm: 0.875rem; /* 14px */
-    --text-base: 1rem; /* 16px */
-    --text-lg: 1.125rem; /* 18px */
-    --text-xl: 1.25rem; /* 20px */
-    --text-2xl: 1.5rem; /* 24px */
-    --text-3xl: 1.875rem; /* 30px */
+    /* Tamanhos de fonte ajustados para base de 14px */
+    --text-sm: 0.875rem; /* 12.25px */
+    --text-base: 1rem; /* 14px */
+    --text-lg: 1.125rem; /* 15.75px */
+    --text-xl: 1.25rem; /* 17.5px */
+    --text-2xl: 1.5rem; /* 21px */
+    --text-3xl: 1.875rem; /* 26.25px */
 
     /* Bordas */
     --border-radius-sm: 0.25rem; /* 4px */
@@ -53,6 +53,10 @@
     --glass-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
 
+  html {
+    font-size: 14px; /* Define 1rem como 14px */
+  }
+
   /* Estilo global do corpo */
   body {
     background-image:
@@ -68,8 +72,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: overlay;
+    font-size: var(--text-base); /* Usa a variável para o tamanho base */
     font-family: var(--font-body); /* Fonte padrão para o corpo */
     color: var(--color-text);
+    line-height: 1.6; /* Altura da linha */
     min-height: 100vh;
   }
   
@@ -95,6 +101,9 @@
 
   p {
     font-family: var(--font-body); /* Garante que os parágrafos usem Lora */
+    font-size: var(--text-base); /* Tamanho padrão de 14px */
+    line-height: 1.6; /* Altura da linha */
+    color: var(--color-text); /* Cor padrão */
   }
 }
 
