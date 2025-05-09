@@ -4,16 +4,16 @@
       title="Me Fez Um Forte"
       description="Uma música que celebra a força que vem de Deus. Uma canção que fala sobre a transformação que acontece quando entregamos nossa vida ao Senhor."
       image="/imagens/me-fez-um-forte.jpg"
-      :platforms="platforms"
       :spotifyPlayer="platforms.spotifyPlayer"
+      :platforms="platforms"
     />
   </div>
 </template>
 
 <script setup>
 const platforms = {
-  spotify: 'https://open.spotify.com/intl-pt/track/3TrhijH0n2Rd69IQ9rkCSG?si=11994e1eee434990',
   spotifyPlayer: 'https://open.spotify.com/embed/track/3TrhijH0n2Rd69IQ9rkCSG?utm_source=generator',
+  spotify: 'https://open.spotify.com/intl-pt/track/3TrhijH0n2Rd69IQ9rkCSG?si=11994e1eee434990',
   deezer: 'https://dzr.page.link/Xn1Bc6tonvXwG74X8',
   youtube: 'https://youtu.be/SRAN5uDGZWE?si=13WGUPZjY1BbPzHe',
   youtubeMusic: 'https://music.youtube.com/watch?v=SRAN5uDGZWE&si=9nL9maKKvyw5BifO',
