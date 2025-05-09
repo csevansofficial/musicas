@@ -1,7 +1,7 @@
 <template>
   <div class="devotional glass">
-    <h2 class="devotional-title">{{ title }}</h2>
-    <div class="devotional-content">
+    <UnderConstruction />
+    <!-- <div class="devotional-content">
       <div v-if="youtubeId" class="youtube-video">
         <iframe
           width="560"
@@ -15,27 +15,26 @@
       <div class="devotional-article">
         <slot></slot>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    youtubeId: {
-      type: String,
-      default: null,
-    },
-    image: {
-      type: String,
-      default: null,
-    },
+<script setup>
+// Props
+defineProps({
+  title: {
+    type: String,
+    required: true,
   },
-};
+  youtubeId: {
+    type: String,
+    default: null,
+  },
+  image: {
+    type: String,
+    default: null,
+  },
+});
 </script>
 
 <style scoped>

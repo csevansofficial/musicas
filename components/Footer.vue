@@ -11,5 +11,6 @@
 <style scoped>
 footer {
   margin-top: auto;
+  border-radius: 0;
 }
 </style>

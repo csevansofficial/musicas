@@ -1,31 +1,14 @@
 <template>
-  <div class="container mx-auto px-4 py-8 space-y-12">
-    <h1 class="text-3xl font-bold text-center text-gray-900 mb-8">Singles</h1>
-
-    <MusicDetailCard
-      title="Me Fez Um Forte"
-      description="Uma música que celebra a força que vem de Deus. Uma canção que fala sobre a transformação que acontece quando entregamos nossa vida ao Senhor."
-      image="/imagens/me-fez-um-forte.jpg"
-      :platforms="meFezUmForte.platforms"
-    />
-
-    <MusicDetailCard
-      title="Sentença de Amor"
-      description="Uma música que fala ao coração. Uma canção sobre o amor incondicional de Deus e como Ele nos transforma através do Seu amor."
-      image="/imagens/sentenca-de-amor.jpg"
-      :platforms="sentencaDeAmor.platforms"
-    />
-
-    <MusicDetailCard
-      title="O Dia em que o Reino Chegou"
-      description="Uma celebração do Reino de Deus. Uma canção que fala sobre a presença de Deus em nossas vidas e como o Seu Reino se manifesta através de nós."
-      image="/imagens/o-dia-em-que-o-reino-chegou.jpg"
-      :platforms="oDiaEmQueOReinoChegou.platforms"
-    />
+  <div class="min-h-screen flex flex-col">
+    <main class="container mx-auto px-4 py-8 flex-grow">
+      <h2 class="text-3xl font-bold text-center mb-8" lang="en"><i>Sobre</i></h2>
+      <UnderConstruction />
+    </main>
   </div>
 </template>
 
 <script setup>
+import UnderConstruction from '@/components/UnderConstruction.vue'
 const singles = [
   {
     id: 1,
