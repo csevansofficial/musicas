@@ -10,7 +10,7 @@
       <div class="flex flex-col items-center space-y-4">
         <NuxtLink
           :to="route"
-          class="button text-sm"
+          class="button text-sm w-full text-center flex justify-center"
         >
           Saiba mais e Ouça a Música
         </NuxtLink>
