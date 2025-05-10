@@ -8,7 +8,7 @@
             <span class="font-semibold text-gray-700 text-lg"><Logo /></span>
           </NuxtLink>
         </div>
-
+        <p style="font-size: 0.8rem; font-weight: bold;">(Site em Construção)</p>
         <!-- Botão do menu para telas pequenas -->
         <button
           class="md:hidden text-gray-700 focus:outline-none"

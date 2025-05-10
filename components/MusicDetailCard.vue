@@ -6,6 +6,7 @@
       <iframe :src="spotifyPlayer" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
     <img v-else :src="image" alt="Capa da música" class="w-full aspect-square object-cover">
+    <!-- <ShareButton /> -->
     <div class="p-6 text-center">
         <div class="flex flex-wrap justify-center gap-2 mb-6">
         <a v-if="platforms.spotify"
@@ -71,6 +72,7 @@
 </template>
 
 <script>
+// import ShareButton from './ShareButton.vue';
 export default {
   props: {
     title: String,

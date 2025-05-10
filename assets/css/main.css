@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -25,8 +25,8 @@
     --font-sans: 'Lora', sans-serif;
     --font-serif: 'Lora', serif;
     --font-mono: 'Fira Code', monospace;
-    --font-header: 'Playfair Display', serif;
-    --font-body: 'Lora', serif;
+    --font-header: 'Cinzel', 'Playfair Display', serif; /* Fonte para headers */
+    --font-body: 'Lora', serif; /* Fonte para o corpo */
 
     /* Tamanhos de fonte ajustados para base de 14px */
     --text-sm: 0.875rem; /* 12.25px */
@@ -66,8 +66,7 @@
         var(--color-accent) 30%,
         var(--color-background-light) 60%,
         var(--color-background-dark) 100%
-      ),
-      url('/images/noise.png');
+      );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
